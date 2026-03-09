@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de CPF Profissional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h2>Gerador de CPF</h2>
+        <p>Algoritmo Baseado em Módulo 11</p>
+    </header>
+
+    <div class="cpf-box">
+        <div class="cpf-display" id="cpfOutput">000.000.000-00</div>
+        <button id="btnGerar">Gerar Novo CPF</button>
+    </div>
+
+    <section class="info">
+        <h3>Como funciona a validação?</h3>
+        <p>Para um CPF ser válido, ele deve passar por dois cálculos de verificação:</p>
+        <ul>
+            <li><strong>1º Dígito:</strong> Soma dos 9 primeiros dígitos multiplicados por pesos de 10 a 2. O resto da divisão por 11 define o dígito.</li>
+            <li><strong>2º Dígito:</strong> Soma dos 10 dígitos anteriores (incluindo o 1º verificador) com pesos de 11 a 2.</li>
+        </ul>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
